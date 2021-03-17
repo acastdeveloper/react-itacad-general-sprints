@@ -1,0 +1,540 @@
+:root {
+    --margin1: 2rem;
+    --padding1: 1vh;
+    --fontsans0: 'Poppins', sans-serif;
+    --fontsans1: sans-serif;
+    --fontdisplay: font-family: 'Merriweather', serif;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+
+/* **** GLOBALS **** */
+body {
+    margin: 0px;
+    min-height: 100vh;
+    background: #33333333;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    font-family: var(--fontsans1);
+}
+
+a:hover {
+    color: #000;
+}
+
+p {
+    margin-top: 0;
+}
+
+footer {
+    background: #333333;
+    color: cornsilk;
+    padding: 4rem 1rem;
+    max-width: 1480px;
+    margin: auto;
+}
+
+footer #intrafooter {
+    text-align: center;
+}
+
+#intrafooter a {
+    color: #ccc;
+}
+
+#intrafooter a:hover {
+    color: #fff;
+}
+
+#wrap {
+    background: white;
+    max-width: 1480px;
+    margin: auto;
+    /* padding: 3rem 3rem 0 3rem; */
+}
+
+
+
+/* **** AJUSTOS **** */
+.fa {
+    margin: .1rem .4rem;
+    padding: 0;
+}
+
+.small {
+    font-size: .85rem;
+}
+
+
+/* **** A. HEADER **** */
+#wrapheader {
+    background: url("../imgs/fonsCap.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    margin-bottom: 2rem;
+}
+
+#wrapheader>header {
+    padding: 2rem 0;
+}
+
+#wrapheader>header>* {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* **** AJ. HEADER LOGO **** */
+#wrapheader header>figure #logo {
+    width: auto;
+    height: 56px;
+}
+
+
+/* **** AJ. HEADER NAV */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 3rem;
+    text-align: center;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    font-family: var(--fontsans0);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+/*
+#wrapheader>header {
+    background-image: linear-gradient(#fefefeff,
+            #fefefeff,
+            #fefefeff,
+            #fefefedd,
+            #fefefecc,
+            #fefefebb,
+            #fefefeaa,
+            #fefefe99);
+} */
+
+#wrapheader>header a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+
+#wrapheader>header a:hover {
+    color: #000;
+}
+
+/* **** SOCIAL **** */
+#social a {
+    padding: .5rem;
+    background: #ffffffdd;
+    border-radius: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* **** HERO **** */
+#hero {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#hero {
+    background-image: linear-gradient(
+    #fefefe99,
+    #fefefecc,
+    #fefefeff)
+    ;
+} */
+body #wrapheader>#hero>#intra-hero {
+    color: hsl(0, 100%, 88%);
+    background: rgba(55, 55, 55, .7);
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--fontdisplay);
+    font-size: 1.5vw;
+    letter-spacing: .2vw;
+    font-weight: 300;
+}
+
+
+/* **** MAIN **** */
+
+main>section {
+    padding: 0 2rem;
+}
+
+main aside {
+    padding: 2.5rem;
+    background: orange;
+}
+
+
+main>section>article {
+    padding: 0 2rem 0 0;
+}
+
+main>section>article:nth-child(2n) {
+    padding: 0 0 1rem 0;
+}
+
+.ilu {
+    height: 40vh;
+}
+
+.ilu>time,
+.ilu>h4 {
+    padding: .25rem .5rem;
+}
+
+.ilu h4,
+.ilu time {
+    color: white;
+    margin: 0;
+}
+
+.ilu h4 {
+    font-size: 3rem;
+    font-family: var(--fontsans1);
+    font-weight: 400;
+    letter-spacing: .1vw;
+}
+
+.cultura {
+    background: hsla(0, 50%, 50%, 0.5);
+}
+
+.societat {
+    background: hsla(120, 50%, 50%, 0.5);
+}
+
+.paisatge {
+    background: hsla(240, 50%, 50%, 0.5);
+}
+
+.tecnologia {
+    background: hsla(60, 50%, 50%, 0.5);
+}
+
+.text {
+    font-family: var(--fontsans1);
+    font-size: .9rem;
+    padding: .5rem 0;
+}
+
+#i1 {
+    background: url("../imgs/te.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#i2 {
+    background: url("../imgs/osaka.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#i3 {
+    background: url("../imgs/fuji.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#i4 {
+    background: url("../imgs/train.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#downsection {
+    font-family: var(--fontsans1);
+    text-align: justify;
+    padding: 0 0 2rem 0;
+}
+
+
+
+main>aside {
+    font-family: var(--fontsans1);
+    padding-bottom: 2rem;
+}
+
+/* **** FINAL AJUSTOS  **** */
+
+
+
+
+
+
+
+
+/* **** ESTRUCTURA FLEX DESKTOP GLOBAL **** */
+#wrapheader,
+#wrapheader>header,
+#wrapheader>header figure,
+nav,
+nav ul,
+#social,
+#hero,
+main,
+main>section,
+main>aside,
+article,
+.ilu {
+    display: flex;
+}
+
+#wrapheader,
+#social,
+#hero,
+aside,
+article,
+.ilu {
+    flex-direction: column;
+}
+
+nav {
+    align-self: center;
+}
+
+nav ul,
+main {
+    flex-direction: row;
+}
+
+
+/* ** #wrapheader>header ** */
+#wrapheader figure {
+    justify-content: center;
+    align-self: center;
+}
+
+nav {
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#social {
+    justify-content: space-between;
+}
+
+#hero {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+/* ** MAIN ** */
+main>section {
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main>section>article {
+    flex-grow: 1;
+    flex-basis: 46%;
+}
+
+main>section>#downsection {
+    /* flex-grow:2; */
+    flex-basis: 100%;
+}
+
+main>aside {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+
+article {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.ilu {
+    justify-content: flex-end;
+}
+
+
+/* **** MEDIA QUERIES **** */
+
+@media only screen and (max-device-width:1280px) {
+    body #wrapheader>#hero>#intra-hero {
+        position: static;
+        font-size: 2.5vw;
+    }
+
+}
+
+@media only screen and (max-device-width:1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    article:nth-child(2n) {
+        padding-right: 0;
+    }
+
+    body #wrapheader>#hero>#intra-hero {
+        position: static;
+        font-size: 2.7vw;
+    }
+
+    .ilu h4 {
+        font-weight: 200;
+    }
+
+    #downsection {
+        padding-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #wrapheader>header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin: 2rem .5rem;
+    }
+
+    nav ul li {
+        flex-grow: 1;
+    }
+
+    #social {
+        align-self: center;
+        flex-direction: row;
+    }
+
+    #social a {
+        margin-right: 1rem;
+    }
+
+    #social a:last-child {
+        margin-right: 0;
+    }
+
+    body #wrapheader>header {
+        margin-bottom: 0;
+    }
+
+    body #wrapheader>#hero> {
+        justify-content: flex-start;
+    }
+
+    main>section>article {
+        flex-basis: 100%;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-device-width:480px) {
+
+    #wrapheader>header>nav {
+        margin-left: .25rem;
+        margin-right: .25rem;
+    }
+
+    #wrapheader>header>nav .fa {
+
+        font-size: .9rem;
+
+    }
+
+
+
+    nav ul {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    nav>ul>li {
+        margin-right: 0;
+        padding-bottom: .75rem;
+        padding: .5rem 0;
+        text-align: center;
+        flex-basis: 33%;
+    }
+
+    #wrapheader {
+        background-position: bottom;
+    }
+
+    body #wrapheader>#hero {
+        padding: 0;
+    }
+
+    body #wrapheader>#hero>#intra-hero {
+        position: static;
+        top: 0;
+        margin: 0;
+        font-size: 8vw;
+    }
+
+    #downsection,
+    aside,
+    article {
+        text-align: left;
+    }
+
+    .ilu {
+        height: 40vh;
+    }
+
+    .ilu h4 {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+@media only screen and (max-device-width:320px) {
+    .ilu {
+        height: 20vh;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-device-width:240px) {
+    nav ul li {
+        margin: auto .25rem;
+    }
+
+    body #wrapheader>#hero>#intra-hero {
+        font-size: 6vw;
+        letter-spacing: .8vw;
+        top: 0rem;
+    }
+}

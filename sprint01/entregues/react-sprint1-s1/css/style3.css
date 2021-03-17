@@ -1,0 +1,116 @@
+:root {
+    --margin1: 1vh;
+    --padding1: 1vh;
+}
+
+
+
+* {
+    /* PROVISIONAL */
+    /* border:1px dashed grey; */
+    /* FINAL PROVISIONAL*/
+    box-sizing: border-box;
+
+}
+
+
+body {
+    margin: 0px;
+    padding: 1vh;
+    min-height: 98vh;
+}
+
+body * {
+    padding: var(--padding1);
+    margin: var(--margin1);
+}
+
+
+/* Colors */
+
+#wrapheader,
+main,
+footer {
+    background: #000;
+}
+
+
+body>*>* {
+    background: #333;
+}
+
+body>*>*>* {
+    background: #666;
+}
+
+body>*>*>*>* {
+    background: #999;
+}
+
+#downsection {
+    background: #ddd;
+}
+
+
+
+/* ESTRUCTURA */
+
+body,
+#wrapheader,
+header,
+#hero,
+main,
+main>section,
+main>aside {
+    display: flex;
+}
+
+
+/* ESTRUCTURA DESKTOP */
+body,
+#wrapheader,
+#hero,
+aside {
+    flex-direction: column;
+}
+
+main { flex-direction: row;}
+
+nav,
+main>section {
+    flex-grow: 2;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main>section>article {
+    flex-grow:1;
+    flex-basis:40%;
+}
+
+main>section>#downsection {
+    /* flex-grow:2; */
+    flex-basis: 100%;
+}
+
+main>aside {
+    flex-grow:1;
+}
+
+
+@media only screen and (max-device-width:960px) {
+
+    main {flex-direction:column;}
+
+}
+
+
+@media only screen and (max-device-width:768px) {
+
+    header {flex-direction:column;}
+
+    main>section>article {
+        flex-basis: 100%;
+    }
+
+}

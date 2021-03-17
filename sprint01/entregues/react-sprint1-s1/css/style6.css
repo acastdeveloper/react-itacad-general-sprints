@@ -1,0 +1,531 @@
+:root {
+    --fsize1: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--fsize1);
+    background: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #000;
+}
+
+
+/* **** AJUSTOS **** */
+#logo {
+    width: 60px;
+    height: auto;
+}
+
+#wrapheader header figure {
+    margin: 0;
+}
+
+#wrapheader header #social {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapheader nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+p {
+    margin-top: 0;
+}
+
+footer {
+    background: #333333;
+    color: cornsilk;
+    padding: 4rem 1rem;
+    max-width: 1480px;
+    margin: auto;
+}
+
+footer #intrafooter {
+    text-align: center;
+}
+
+#intrafooter a {
+    color: #ccc;
+}
+
+#intrafooter a:hover {
+    color: #fff;
+}
+
+#wrap {
+    background: white;
+    max-width: 1480px;
+    margin: auto;
+    background: white;
+}
+
+
+/* **** AJUSTOS **** */
+.fa {
+    margin: .1rem .4rem;
+    padding: 0;
+}
+
+.small {
+    font-size: .85rem;
+}
+
+
+/* **** A. HEADER **** */
+#wrapheader {
+    background: url("../imgs/fonsCap.jpg");
+    background-size: cover;
+    background-position: center center ;
+}
+
+#wrapheader>header {
+    padding: 2rem;
+}
+
+
+
+/* **** AJ. HEADER LOGO **** */
+#wrapheader header>figure #logo {
+    width: auto;
+    height: 56px;
+}
+
+
+/* **** AJ. HEADER NAV */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+nav ul li a {
+    font-family: var(--fontsans0);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+/*
+#wrapheader>header {
+    background-image: linear-gradient(#fefefeff,
+            #fefefeff,
+            #fefefeff,
+            #fefefedd,
+            #fefefecc,
+            #fefefebb,
+            #fefefeaa,
+            #fefefe99);
+} */
+
+#wrapheader>header a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+
+#wrapheader>header a:hover {
+    color: #000;
+}
+
+/* **** SOCIAL **** */
+#social a {
+    padding: .5rem;
+    background: #ffffffdd;
+    border-radius: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* **** HERO **** */
+#hero {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#hero {
+    background-image: linear-gradient(
+    #fefefe99,
+    #fefefecc,
+    #fefefeff)
+    ;
+} */
+body #wrapheader>#hero>#intra-hero {
+    color: hsl(0, 100%, 88%);
+    background: rgba(55, 55, 55, .7);
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--fontdisplay);
+    font-size: 1.8vw;
+    letter-spacing: .2vw;
+    font-weight: 300;
+}
+
+
+/* **** MAIN **** */
+
+main>section {
+    padding: 2rem 2rem;
+}
+
+main aside {
+    padding: 2.5rem;
+    background: orange;
+}
+
+
+.ilu {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.ilu>time,
+.ilu>h4 {
+    padding: .25rem .5rem;
+}
+
+.ilu h4,
+.ilu time {
+    color: white;
+    margin: 0;
+}
+
+.ilu h4 {
+    font-size: 2rem;
+    font-family: var(--fontsans1);
+    font-weight: 400;
+    letter-spacing: .1vw;
+}
+
+.cultura {
+    background: hsla(0, 50%, 50%, 0.5);
+}
+
+.societat {
+    background: hsla(120, 50%, 50%, 0.5);
+}
+
+.paisatge {
+    background: hsla(240, 50%, 50%, 0.5);
+}
+
+.tecnologia {
+    background: hsla(60, 50%, 50%, 0.5);
+}
+
+.text {
+    font-family: var(--fontsans1);
+    font-size: .9rem;
+    padding: .5rem 0;
+}
+
+#i1 {
+    background: url("../imgs/te.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#i2 {
+    background: url("../imgs/osaka.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#i3 {
+    background: url("../imgs/fuji.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#i4 {
+    background: url("../imgs/train.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#downsection {
+    font-family: var(--fontsans1);
+    text-align: left;
+}
+
+
+
+main>aside {
+    font-family: var(--fontsans1);
+    padding-bottom: 2rem;
+}
+
+/* **** FINAL AJUSTOS  **** */
+
+#wrapheader header, #hero {
+    background: hsla(351, 100%, 86%, 0.12);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* **** FINAL AJUSTOS ****/
+
+
+/* **** ESTRUCTURA HEADER **** */
+
+#wrapheader {
+    height: 70vh;
+    display: grid;
+    /* display: none; */
+    /* **** HEADER DESACTIVAT **** */
+    grid-template-rows: auto 1fr;
+}
+
+#hero {
+    /* align-self: center; */
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+
+
+
+
+
+#wrapheader header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 10vw;
+    grid-template-areas: "logo nav social";
+}
+
+#wrapheader header figure {
+    grid-area: "logo";
+}
+
+#wrapheader nav {
+    grid-area: "nav";
+    justify-self: center;
+    display: grid;
+}
+
+#wrapheader header #social {
+    grid-area: "social";
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#wrapheader nav ul {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#wrapheader nav li {
+    justify-self: center;
+    text-align: center;
+}
+
+#wrapheader nav li a {
+    text-align: center;
+}
+
+
+/* **** ESTRUCTURA MAIN **** */
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "section aside";
+}
+
+main>section {
+    grid-area: "section";
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+main>section>#downsection {
+    grid-column: 1/3;
+}
+
+
+main>aside {
+    grid-area: "aside";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **** MEDIA QUERIES **** */
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
+    body #wrapheader>#hero>#intra-hero {
+        font-size: 4vh;
+    }
+
+}
+
+/*
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+    body #wrapheader>#hero>#intra-hero {
+        font-size: 4vh;
+    }
+
+}
+
+/*
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media  (max-width: 1024px) {
+
+    /* CSS */
+    body #wrapheader>#hero>#intra-hero {
+        font-size: 3vh;
+    }
+
+
+    main {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: "section""aside";
+    }
+main aside {
+    padding: 4rem;
+}
+
+}
+
+/*
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+    body #wrapheader>#hero>#intra-hero {
+        font-size: 3vw;
+    }
+}
+
+/*
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (max-width: 767px) {
+
+    /* CSS */
+
+
+    #wrapheader header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 1rem;
+        grid-template:
+            "logo"
+            "nav"
+            "social"
+        ;
+        justify-items: center;
+    }
+
+    #wrapheader header #social {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        grid-column-gap: 1.5vw;
+    }
+
+
+    main>section {
+        grid-area: "section";
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    main>section>article {
+grid-column: 1/3;
+    }
+
+}
+
+/*
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width:320px) and (max-width: 480px) {
+
+    /* CSS */
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 320px) {
+
+
+}

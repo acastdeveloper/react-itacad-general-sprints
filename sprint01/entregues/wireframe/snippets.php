@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{ac} alexander castelló / snippets</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FONTS DE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/2/style2.css">
+
+    <!-- PREVENTING FOUC 1/2 -->
+    <style>
+        #wrap {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header>
+            <h1 id="logo"><a href="index.html" alt="home">{ac} alexander castelló / </a><span
+                    class="tag midcolor">Snippets</span></h1>
+            <div id="social">
+                <a href="#"><i class="
+                    fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i
+                        class="fas fa-at"></i></a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-to.html">How to</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="snippets.html" class="selected">Snippets</a></li>
+                <li><a href="about-me.html">About me</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <article id="art-html">
+                    <figure></figure>
+                    <div>
+
+                        <h4>HTML5 SNIPPETS</h4>
+                        <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi maxime nemo, quae veniam
+                            molestias qui ad eveniet vitae assumenda, incidunt amet reprehenderit numquam nesciunt iste
+                            eligendi officiis perspiciatis! Architecto quasi doloremque fuga. </section>
+                        <a href="#">Read more...</a>
+                    </div>
+                </article>
+
+
+
+                <article id="art-css">
+                    <figure></figure>
+                    <div>
+
+                        <h4>CSS SNIPPETS</h4>
+                        <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolor ipsum veritatis
+                            hic? Molestias deleniti commodi nihil fuga delectus praesentium, repellendus maiores veniam
+                            dolorem libero. Quam voluptas amet consequatur. Eum?.</section>
+                        <a href="#">Read more...</a>
+                    </div>
+                </article>
+
+
+                <article id="art-javascript">
+                    <figure></figure>
+                    <div>
+
+                        <h4>Javascript SNIPPETS</h4>
+                        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, labore dolorem
+                            enim doloremque expedita modi reiciendis corporis ab veritatis, quas eveniet pariatur
+                            impedit culpa? Odit impedit eos quia ipsam cum magnam in, necessitatibus autem, ut rerum
+                            distinctio iusto! Dolorem repellendus quae culpa sunt nostrum. Repellendus quis nemo
+                            reprehenderit nesciunt eaque. </section>
+                        <a href="#">Read more...</a>
+                    </div>
+                </article>
+
+
+            </section>
+        </main>
+        <footer>
+            © 2021 {ac} alexandercastello.com | All rights reserved | <a href="#">Contact</a>
+        </footer>
+    </div>
+
+    <!-- GOOGLE FONTS 2/2 [ASYNC] -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Noto+Sans+JP:100,300,400,500,700', 'Nunito+Sans:200,300,400,600',
+                    'Oswald:200,300,400,600,700', 'Roboto+Slab:200,400,600'
+                ]
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <script src="https://kit.fontawesome.com/f5043cec08.js" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        document.getElementById("wrap").style.display = "grid";
+    </script>
+
+</body>
+
+</html>

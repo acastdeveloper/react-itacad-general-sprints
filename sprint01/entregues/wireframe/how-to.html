@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{ac} alexander castelló / how to ...</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- GOOGLE FONTS 1/2 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/2/style2.css">
+
+    <!-- PREVENTING FOUC 1/2 -->
+    <style>
+        #wrap {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header>
+            <h1 id="logo"><a href="index.html" alt="home">{ac} alexander castelló / </a><span class="tag midcolor">How
+                    to ...</span></h1>
+            <div id="social">
+                <a href="#"><i class="
+                    fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i
+                        class="fas fa-at"></i></a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-to.html" class="selected">How to</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="snippets.html">Snippets</a></li>
+                <li><a href="about-me.html">About me</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <article id="art-decissions">
+                    <figure></figure>
+                    <div>
+                        <div class="small">January 9th, 2022. #BRAIN</div>
+                        <h4>How to use your own brain</h4>
+                        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem atque
+                            reprehenderit, impedit quae obcaecati nemo dolore illo pariatur dignissimos debitis
+                            repudiandae laudantium amet quas quia nulla, nobis delectus iste! </section>
+                        <a href="#">Read more...</a>
+                    </div>
+                </article>
+
+                <article id="art-poo">
+                    <figure></figure>
+                    <div>
+                        <div class="small">September 2nd, 2021. #PROGRAMMING, #Javascript</div>
+                        <h4>How to define Objects in Javascript</h4>
+                        <section>Soon or late you will need understand POO. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Animi similique eveniet labore asperiores sint ullam quo, odit vero
+                            possimus error! Eius, maxime voluptas? Based on reallity programming languages try to
+                            recreate relationships between objects and parts of them.</section>
+                        <a href="#">Read more...</a>
+                    </div>
+                </article>
+
+
+                <article id="art-debug">
+                    <figure></figure>
+                    <div>
+                        <div class="small">September 2nd, 2021. #Debug</div>
+                        <h4>How to debug</h4>
+                        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed tempora aut
+                            odit repellendus quaerat numquam cumque? Doloribus aspernatur consequuntur explicabo
+                            sapiente rem ab nemo facere, repudiandae inventore blanditiis possimus voluptatum recusandae
+                            fugiat reprehenderit dignissimos excepturi aliquam harum placeat ratione aperiam magni
+                            reiciendis iste. Obcaecati. </section>
+                        <a href="#">Read more...</a>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+        <footer>
+            © 2021 {ac} alexandercastello.com | All rights reserved | <a href="#">Contact</a>
+        </footer>
+    </div>
+
+    <!-- GOOGLE FONTS 2/2 [ASYNC] -->
+    <!-- Once this HTML is fully rendered browser calls to download Google Fonts -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Noto+Sans+JP:100,300,400,500,700', 'Nunito+Sans:200,300,400,600',
+                    'Oswald:200,300,400,600,700', 'Roboto+Slab:200,400,600'
+                ]
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- ICONS DE FONT AWESOEME -->
+    <script src="https://kit.fontawesome.com/f5043cec08.js" crossorigin="anonymous"></script>
+
+    <!-- PREVENTING FOUC 2/2 -->
+    <script type="text/javascript">
+        document.getElementById("wrap").style.display = "grid";
+    </script>
+
+</body>
+</html>

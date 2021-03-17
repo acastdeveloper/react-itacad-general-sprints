@@ -1,0 +1,257 @@
+:root {
+    --margin1: 1vh;
+    --padding1: 1vh;
+}
+
+
+
+* {
+    /* PROVISIONAL */
+    /* border:1px dashed grey; */
+    /* FINAL PROVISIONAL*/
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0;
+    min-height: 100vh;
+}
+
+main *, footer * {
+    padding: var(--padding1);
+    margin: var(--margin1);
+}
+
+
+/* ****** COLORS PER IDENTIFICAR PROVISIONAL ******* */
+
+main,
+footer {
+    background: #000;
+}
+
+
+main>*,
+footer>* {
+    background: #333;
+}
+
+
+main>*>*,
+footer>*>* {
+    background: #666;
+}
+
+
+#downsection {
+    background: #ddd;
+}
+
+
+/* ************ HEADER ******************** */
+#wrapheader {
+    background-image: url("/imgs/fonsCap.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    margin: 0;
+}
+
+header {
+    border: 1px dashed orange;
+padding: 1rem;
+}
+
+header>* {
+    margin: 0 1rem;
+    /* border: 1px dashed pink; */
+}
+
+
+
+header>figure,header>nav, header>#social {
+    border:1px solid blue;
+    padding: 0;
+}
+
+#logo  {
+line-height: 0;
+width: 80px;
+height: auto;
+}
+
+
+
+nav {
+    padding: 0;
+    align-items: center;
+    margin: 0 10rem;
+}
+
+nav>ul {
+    /* border: 1px solid darkgoldenrod; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav>ul>li {
+    /* border: 1px solid purple; */
+    margin-right: 1rem;
+}
+
+nav>ul>li:last-child {
+    /* border: 1px solid purple; */
+    margin-right:0;
+}
+
+nav a, #social a {
+    text-decoration: none;
+    color:#999;
+    padding: 1rem;
+}
+
+nav a:hover, #social a:hover {
+color:#333;
+}
+
+
+#social {
+    border: 1px dashed lightblue;
+    line-height: 0px;
+}
+
+#social a {
+    border: 1px dashed darkturquoise;
+    line-height: 0px;
+}
+
+
+
+#hero {
+    border: 1px dashed limegreen;
+    margin: 0;
+}
+
+
+
+
+/* *************** ESTRUCTURA DESKTOP ************* */
+body,
+#wrapheader,
+header,
+#figure,
+#hero,
+main,
+main>section,
+main>aside,
+nav,
+nav ul,
+#social {
+    display: flex;
+}
+
+
+
+body,
+#wrapheader,
+figure,
+#social,
+#hero,
+aside {
+    flex-direction: column;
+}
+
+main, header, nav ul {
+    flex-direction: row;
+}
+
+header figure, nav, #social {
+    flex-shrink: 1;
+}
+
+header figure {order:1;}
+
+nav {
+    flex-grow: 1;
+    order:2;
+}
+
+#social {
+align-content: center;
+order:3;
+}
+
+
+
+main>section {
+    flex-grow: 2;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main>section>article {
+    flex-grow: 1;
+    flex-basis: 40%;
+}
+
+main>section>#downsection {
+    /* flex-grow:2; */
+    flex-basis: 100%;
+}
+
+main>aside {
+    flex-grow: 1;
+}
+
+
+
+figure  {
+    align-self:center;}
+
+nav {
+    align-self: center;
+    justify-content: flex-start;
+}
+
+nav>ul {
+    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#social {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#social a {
+    align-self: center;
+    flex-grow: 1;
+}
+
+#hero {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ESTRUCTURA TABLET */
+
+@media only screen and (max-device-width:960px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+/* ESTRUCTURA MOBIL */
+@media only screen and (max-device-width:768px) {
+    header {
+        flex-direction: column;
+    }
+}
